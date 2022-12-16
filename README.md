@@ -72,8 +72,10 @@ function three(){
    console.log("three")
 }
 
-  one().then(() => two()).then(() => three());
+// .then
+one().then(() => two()).then(() => three());
 
+// async await
 await one();
 await two();
 await three();
