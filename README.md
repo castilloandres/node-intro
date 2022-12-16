@@ -3,9 +3,9 @@
 ### A bit of history
 - Ruby and rails era dhh (beautiful syntax, basecamp)
 	- Progress bar on flickr - mongrel web server:
-	1. iFrame to update progress bar
-	2. Ajax requests
-	3. Long polling.
+		1. iFrame to update progress bar
+		2. Ajax requests
+		3. Long polling.
 - Wrote server in C + ruby but each line of ruby got 5% slower.
 - Wrote web server in C -> avg web developer could not use it.
 - python, lua, haskl, with non blocking system. Problem was libs.
