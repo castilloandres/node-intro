@@ -1,33 +1,39 @@
 # node-intro
 
-1. A bit of history
-  //ruby and rails era dhh
-    // progress bar on flickr - mongrel web server
-      // iframe to update progress bar
-      // ajax requests
-      // long polling
-  //Wrote server in C + ruby but each line of ruby got 5% slower
-  // Wrote web server in C -> avg web developer could not use it
-  // python, lua, haskl, with non blocking system. Problem was libs.
-  // V8 was released in 2008, small communities of JS (Netscape)
-  // Make servers fast and less painfully to set up
-  // joyent -> data centers hosting node
-2. Why asynchronous and synchronous I/O? Original Node.js presentation-> https://www.youtube.com/watch?v=ztspvPYybIY
-	// history of frameworks of concurrency and threads
-
-3.Why JavaScript 
-  // the only lib without sync modules
-4. Where did Node.js come from?
-	// server framework for using async code
-  // V8 chrome engine
-  // asynchronous event-driven JavaScript runtime
-5. What is a callback.
-// A way to implement async IO in abstract
+### A bit of history
+- Ruby and rails era dhh (beautiful syntax, basecamp)
+	- progress bar on flickr - mongrel web server:
+	1. iframe to update progress bar
+	2. ajax requests
+	3. long polling
+- Wrote server in C + ruby but each line of ruby got 5% slower
+- Wrote web server in C -> avg web developer could not use it
+- python, lua, haskl, with non blocking system. Problem was libs.
+- V8 was released in 2008, small communities of JS (Netscape)
+- Make servers fast and less painfully to set up
+- Joyent -> data centers hosting node
 
 
+### Why asynchronous and synchronous I/O? Original Node.js presentation-> https://www.youtube.com/watch?v=ztspvPYybIY
+- History of frameworks of concurrency and threads
+
+### Why JavaScript 
+- The only lib without sync modules
+
+### Where did Node.js come from?
+- Server framework for using async code
+- V8 chrome engine
+- Asynchronous event-driven JavaScript runtime
+
+### What is a callback.
+- A way to implement async IO in abstract
 
 
-// What is a callback.
+
+
+### What is a callback.
+
+```js
 function greet(name, callback) {
     console.log('Hi' + ' ' + name);
     callback();
@@ -47,7 +53,7 @@ const myPromise = new Promise((resolve, reject) => {
     console.log("foo");
   }, 3000);
 });
-
+```
 
 // .then() vs. async+await
 
