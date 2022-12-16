@@ -2,20 +2,21 @@
 
 ### A bit of history
 - Ruby and rails era dhh (beautiful syntax, basecamp)
-	- progress bar on flickr - mongrel web server:
-	1. iframe to update progress bar
-	2. ajax requests
-	3. long polling
-- Wrote server in C + ruby but each line of ruby got 5% slower
-- Wrote web server in C -> avg web developer could not use it
+	- Progress bar on flickr - mongrel web server:
+	1. iFrame to update progress bar
+	2. Ajax requests
+	3. Long polling.
+- Wrote server in C + ruby but each line of ruby got 5% slower.
+- Wrote web server in C -> avg web developer could not use it.
 - python, lua, haskl, with non blocking system. Problem was libs.
-- V8 was released in 2008, small communities of JS (Netscape)
-- Make servers fast and less painfully to set up
-- Joyent -> data centers hosting node
+- V8 was released in 2008, small communities of JS (Netscape).
+- Make servers fast and less painfully to set up.
+- Joyent -> data centers hosting node.
 
 
-### Why asynchronous and synchronous I/O? Original Node.js presentation-> https://www.youtube.com/watch?v=ztspvPYybIY
-- History of frameworks of concurrency and threads
+### Why asynchronous and synchronous I/O?
+- History of frameworks of concurrency and threads.
+- Original Node.js presentation-> https://www.youtube.com/watch?v=ztspvPYybIY
 
 ### Why JavaScript 
 - The only lib without sync modules
@@ -27,11 +28,6 @@
 
 ### What is a callback.
 - A way to implement async IO in abstract
-
-
-
-
-### What is a callback.
 
 ```js
 function greet(name, callback) {
@@ -55,8 +51,9 @@ const myPromise = new Promise((resolve, reject) => {
 });
 ```
 
-// .then() vs. async+await
+### .then() vs. async+await
 
+```js
 function one() {
   return new Promise(resolve => {
     console.log("one");
@@ -80,6 +77,6 @@ function three(){
 await one();
 await two();
 await three();
-
+```
  
- //non-blocking vs. blocking I/O
+### Non-blocking vs. blocking I/O
